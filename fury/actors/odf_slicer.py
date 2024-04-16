@@ -82,6 +82,7 @@ class OdfSlicerActor(Actor):
 
         # If a B matrix is given, odfs are expected to
         # be in SH basis coefficients.
+        self.scale = 1.
         if self.B is not None:
             # In that case, we need to save our normalisation and scale
             # to apply them after conversion from SH to SF.
